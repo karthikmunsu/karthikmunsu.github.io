@@ -8,11 +8,26 @@
 <body>
     <h1>i will catch u fresh chat</h1>
 <script type="text/javascript" id="zsiqchat" async>
-  window.$zoho;
-//   window.addEventListener('load', function(){
-      console.log('loaded');
-      window.$zoho=window.$zoho || {};window.$zoho.salesiq = window.$zoho.salesiq || {widgetcode: "e0a717548723850adff37071a4043e562bb6fb59dac999a51986f6f6acb92e2f", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-//   }, false)
+  function initSalesIq() {
+        window.$zoho = {};
+    }
+
+    function initalize() {
+        initSalesIq();
+        window.$zoho=window.$zoho || {};
+        window.$zoho.salesiq = window.$zoho.salesiq || {widgetcode: "e0a717548723850adff37071a4043e562bb6fb59dac999a51986f6f6acb92e2f", values:{},ready:function(){}};
+        var d=document;
+        var s=d.createElement("script");
+        s.type="text/javascript";
+        s.id="zsiqscript";
+        s.defer=true;
+        s.async=true;
+        s.src="https://salesiq.zoho.com/widget";
+        var t=d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s,t);
+    }
+
+    window.addEventListener("load", initialize, !1);
 </script>
 </body>
 </html>
