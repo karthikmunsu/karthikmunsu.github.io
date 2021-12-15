@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript"> var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "83613cf62689247c379a8aececdd9b12160cfe9e10ffed01bc57d3a330ea8915", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://lab1salesiq.localzoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>"); </script>
+    <script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "ab5b2f0e-e94f-4f55-840a-6b75e31ba44d",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
 </body>
 </html>
