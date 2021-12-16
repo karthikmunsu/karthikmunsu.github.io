@@ -8,24 +8,21 @@
 <body>
     <h1>i will catch u fresh chat</h1>
 
-          <script>
-  
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "ab5b2f0e-e94f-4f55-840a-6b75e31ba44d",
-      host: "https://wchat.in.freshchat.com"
-    });
-  }
-  function initialize(i,t){
-      var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))
-      console.timeEnd()
-  }
-  
-  function initiateCall(){
-      console.time();
-      initialize(document,"Freshchat-js-sdk")
-  }
-  window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+<script>
+    window.addEventListener('load', function(){
+            if(document.readyState == 'complete') {
+                let _frame = document.createElement('iframe');
+                _frame.id= 'salesiq_widget';
+                _frame.name= 'salesiq_widget';
+                _frame.title= "SIQ";
+                _frame.frameborder= "0";
+                _frame.allowfullscreen= "true";
+                _frame.webkitallowfullscreen= "true";
+                _frame.mozallowfullscreen= "true";
+                document.body.appendChild(_frame);
+                _frame.src = "https://karthikmunsu.github.io/siq";
+        }
+    })
 </script>
        
 </body>
