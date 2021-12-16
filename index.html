@@ -13,11 +13,11 @@
       <body>
           <h1>helllo</h1>
           <div id="siq_cont">
-                <iframe id="salesiq_chat_widget" name="salesiq_chat_widget" title="SIQ" frameborder="0" src="about:blank" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"/>
+                <iframe id="salesiq_chat_widget" name="salesiq_chat_widget" title="SIQ" frameborder="0" src="about:blank" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             </div>
           <script>
               function afterLoad() {
-                document.getElementById('salesiq_chat_widget').src = 'https://karthikmunsu.github.io/siq';
+                document.getElementsByTagName('iframe')[0].src = 'https://karthikmunsu.github.io/siq';
               }
               window.addEventListener("load", afterLoad, !1);
           </script>
