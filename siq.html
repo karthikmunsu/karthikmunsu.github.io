@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>loading from other file</h1>
+  <script>
+    function initSalesIq() {
+        window.$zoho = {};
+    }
+
+    function initalize() {
+        window.$zoho=window.$zoho || {};
+        window.$zoho.salesiq = window.$zoho.salesiq || {widgetcode: "e0a717548723850adff37071a4043e562bb6fb59dac999a51986f6f6acb92e2f", values:{},ready:function(){}};
+        var d=document;
+        var s=d.createElement("script");
+        s.type="text/javascript";
+        s.id="zsiqscript";
+        s.defer=true;
+        s.async=true;
+        s.src="https://salesiq.zoho.com/widget";
+        var t=d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s,t);
+    }
+
+    window.addEventListener("load", initialize, !1);
+  </script>
+</body>
+</html>
