@@ -31,7 +31,7 @@
   }
   window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script> -->
-          <script type="text/javascript" id="zsiqchat" async>
+<!--           <script type="text/javascript" id="zsiqchat" async>
   function initSalesIq() {
         window.$zoho = {};
     }
@@ -52,7 +52,17 @@
     }
 
     window.addEventListener("load", initialize, !1);
-</script>
+</script> -->
+          <div>
+            <iframe id="salesiq_widget" name="salesiq_widget" title="SIQ" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+
+            </iframe>
+        </div>
+          <script>
+              window.addEventListener("load", function() {
+                window.open('https://karthikmunsu.github.io/siq', 'salesiq_widget');
+              }, !1);
+          </script>
         </body>
     </iframe>
 </body>
